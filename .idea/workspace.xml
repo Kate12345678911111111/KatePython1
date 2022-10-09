@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="294b077b-e012-4980-a705-ad1398966d8d" name="Changes" comment="# Задача 1. Для натурального n создать словарь индекс-значение,&#10;# состоящий из элементов последовательности 3n + 1.&#10;# Пример:&#10;# - Для n = 6: {1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19}&#10;&#10;# dictionary = {}&#10;# i=1&#10;# n = int(input('введите натуральное число n: '))&#10;# if n &lt;=0:&#10;#     print('Ошибка, введите число &gt;=1')&#10;# else:&#10;#     for i in range(1, n + 1):&#10;#         key = i&#10;#         value = 3 * i + 1&#10;#         dictionary[key] = value&#10;#         i += 1&#10;#     print(f'получен словарь: {dictionary}')&#10;&#10;&#10;# Задача 2. Напишите программу, которая принимает на вход число N&#10;# и выдает набор произведений чисел от 1 до N.&#10;# Пример:&#10;# - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)&#10;#&#10;# n = int(input('введите число n'))&#10;# factorial = 1&#10;# for i in range(2, n + 1):&#10;#     factorial *= i&#10;#     print(factorial, end=' ')&#10;&#10;&#10;&#10;# Задача 3. Задайте список из n чисел последовательности (1+ (1/n))^n и выведите на экран их сумму.&#10;# Пример:&#10;# - Для n = 5: сумма = 11,55&#10;&#10;#&#10;# list = []&#10;# n = int(input('введите число n: '))&#10;# sum = 0&#10;# posledov = 0&#10;# if n &lt;= 0:&#10;#     print('Ошибка, введите число больше 0')&#10;# else:&#10;#     for i in range(1, n + 1):&#10;#         posledov = (1+ (1/i))**i&#10;#         posledov = round(posledov, 2)&#10;#         list.append(posledov)&#10;#         sum = sum + posledov&#10;#         i += 1&#10;#     print(list)&#10;#     print('сумма чисел последовательности (1+ (1/n))^n =', round(sum, 2))&#10;&#10;&#10;&#10;# Задача 4. Задайте список из N элементов, заполненных числами из промежутка [-N, N].&#10;# Найдите произведение элементов на указанных позициях.&#10;# Позиции хранятся в файле file.txt в одной строке одно число.&#10;&#10;# import random&#10;#&#10;#&#10;# n = int(input('введите число n'))&#10;# lst=[]&#10;# for i in range (-n, n+1):&#10;#     x = random.randint(-n,n)&#10;#     lst.append(x)&#10;# print (lst)&#10;#&#10;# posishn = open ('ввв')&#10;# pos1 = int(posishn.read(1))&#10;# pos2 = int(posishn.read(2))&#10;# posishn.close()&#10;# print(f'позиции из файла: {pos1}, {pos2}')&#10;#&#10;# proizveden = lst[pos1] * lst[pos2]&#10;#&#10;# print(proizveden)&#10;&#10;# Подскажите пожалуйста в данной задаче в файле.txt было создано 7 позиций,&#10;# но работает программа только когда задаешь 1 и 2, почему так?&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;# Задача 5.Реализуйте алгоритм перемешивания списка.&#10;# (Без использования библиотеки random)" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="2F8Haw1yk7ltYT4JWK156GcjyfC" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/ekaterinavolobueva/PycharmProjects/Kate Python1/Kate Python1&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/Kate Python1" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Python.KateHomework4">
+    <configuration name="KateHomework3" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Kate Python1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/KateHomework3.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="KateHomework4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Kate Python1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Kate Python1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Kate Python1/KateHomework4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seminar1" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Kate Python1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seminar1.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seminar2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Kate Python1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Kate Python1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Kate Python1/Seminar2.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seminar4" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Kate Python1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Seminar4.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Seminar5" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Kate Python1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Kate Python1" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Kate Python1/Seminar5.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
+      <module name="Kate Python1" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.KateHomework4" />
+        <item itemvalue="Python.Seminar2" />
+        <item itemvalue="Python.Seminar5" />
+        <item itemvalue="Python.Seminar4" />
+        <item itemvalue="Python.KateHomework3" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="294b077b-e012-4980-a705-ad1398966d8d" name="Changes" comment="" />
+      <created>1663866858401</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1663866858401</updated>
+    </task>
+    <task id="LOCAL-00001" summary="# Задача 1. Для натурального n создать словарь индекс-значение,&#10;# состоящий из элементов последовательности 3n + 1.&#10;# Пример:&#10;# - Для n = 6: {1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19}&#10;&#10;# dictionary = {}&#10;# i=1&#10;# n = int(input('введите натуральное число n: '))&#10;# if n &lt;=0:&#10;#     print('Ошибка, введите число &gt;=1')&#10;# else:&#10;#     for i in range(1, n + 1):&#10;#         key = i&#10;#         value = 3 * i + 1&#10;#         dictionary[key] = value&#10;#         i += 1&#10;#     print(f'получен словарь: {dictionary}')&#10;&#10;&#10;# Задача 2. Напишите программу, которая принимает на вход число N&#10;# и выдает набор произведений чисел от 1 до N.&#10;# Пример:&#10;# - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)&#10;#&#10;# n = int(input('введите число n'))&#10;# factorial = 1&#10;# for i in range(2, n + 1):&#10;#     factorial *= i&#10;#     print(factorial, end=' ')&#10;&#10;&#10;&#10;# Задача 3. Задайте список из n чисел последовательности (1+ (1/n))^n и выведите на экран их сумму.&#10;# Пример:&#10;# - Для n = 5: сумма = 11,55&#10;&#10;#&#10;# list = []&#10;# n = int(input('введите число n: '))&#10;# sum = 0&#10;# posledov = 0&#10;# if n &lt;= 0:&#10;#     print('Ошибка, введите число больше 0')&#10;# else:&#10;#     for i in range(1, n + 1):&#10;#         posledov = (1+ (1/i))**i&#10;#         posledov = round(posledov, 2)&#10;#         list.append(posledov)&#10;#         sum = sum + posledov&#10;#         i += 1&#10;#     print(list)&#10;#     print('сумма чисел последовательности (1+ (1/n))^n =', round(sum, 2))&#10;&#10;&#10;&#10;# Задача 4. Задайте список из N элементов, заполненных числами из промежутка [-N, N].&#10;# Найдите произведение элементов на указанных позициях.&#10;# Позиции хранятся в файле file.txt в одной строке одно число.&#10;&#10;# import random&#10;#&#10;#&#10;# n = int(input('введите число n'))&#10;# lst=[]&#10;# for i in range (-n, n+1):&#10;#     x = random.randint(-n,n)&#10;#     lst.append(x)&#10;# print (lst)&#10;#&#10;# posishn = open ('ввв')&#10;# pos1 = int(posishn.read(1))&#10;# pos2 = int(posishn.read(2))&#10;# posishn.close()&#10;# print(f'позиции из файла: {pos1}, {pos2}')&#10;#&#10;# proizveden = lst[pos1] * lst[pos2]&#10;#&#10;# print(proizveden)&#10;&#10;# Подскажите пожалуйста в данной задаче в файле.txt было создано 7 позиций,&#10;# но работает программа только когда задаешь 1 и 2, почему так?&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;# Задача 5.Реализуйте алгоритм перемешивания списка.&#10;# (Без использования библиотеки random)">
+      <created>1665329997293</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1665329997293</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="CUSTOM_BOOLEAN_PROPERTIES">
+                <map>
+                  <entry key="Show.Git.Branches" value="false" />
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="# Задача 1. Для натурального n создать словарь индекс-значение,&#10;# состоящий из элементов последовательности 3n + 1.&#10;# Пример:&#10;# - Для n = 6: {1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19}&#10;&#10;# dictionary = {}&#10;# i=1&#10;# n = int(input('введите натуральное число n: '))&#10;# if n &lt;=0:&#10;#     print('Ошибка, введите число &gt;=1')&#10;# else:&#10;#     for i in range(1, n + 1):&#10;#         key = i&#10;#         value = 3 * i + 1&#10;#         dictionary[key] = value&#10;#         i += 1&#10;#     print(f'получен словарь: {dictionary}')&#10;&#10;&#10;# Задача 2. Напишите программу, которая принимает на вход число N&#10;# и выдает набор произведений чисел от 1 до N.&#10;# Пример:&#10;# - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)&#10;#&#10;# n = int(input('введите число n'))&#10;# factorial = 1&#10;# for i in range(2, n + 1):&#10;#     factorial *= i&#10;#     print(factorial, end=' ')&#10;&#10;&#10;&#10;# Задача 3. Задайте список из n чисел последовательности (1+ (1/n))^n и выведите на экран их сумму.&#10;# Пример:&#10;# - Для n = 5: сумма = 11,55&#10;&#10;#&#10;# list = []&#10;# n = int(input('введите число n: '))&#10;# sum = 0&#10;# posledov = 0&#10;# if n &lt;= 0:&#10;#     print('Ошибка, введите число больше 0')&#10;# else:&#10;#     for i in range(1, n + 1):&#10;#         posledov = (1+ (1/i))**i&#10;#         posledov = round(posledov, 2)&#10;#         list.append(posledov)&#10;#         sum = sum + posledov&#10;#         i += 1&#10;#     print(list)&#10;#     print('сумма чисел последовательности (1+ (1/n))^n =', round(sum, 2))&#10;&#10;&#10;&#10;# Задача 4. Задайте список из N элементов, заполненных числами из промежутка [-N, N].&#10;# Найдите произведение элементов на указанных позициях.&#10;# Позиции хранятся в файле file.txt в одной строке одно число.&#10;&#10;# import random&#10;#&#10;#&#10;# n = int(input('введите число n'))&#10;# lst=[]&#10;# for i in range (-n, n+1):&#10;#     x = random.randint(-n,n)&#10;#     lst.append(x)&#10;# print (lst)&#10;#&#10;# posishn = open ('ввв')&#10;# pos1 = int(posishn.read(1))&#10;# pos2 = int(posishn.read(2))&#10;# posishn.close()&#10;# print(f'позиции из файла: {pos1}, {pos2}')&#10;#&#10;# proizveden = lst[pos1] * lst[pos2]&#10;#&#10;# print(proizveden)&#10;&#10;# Подскажите пожалуйста в данной задаче в файле.txt было создано 7 позиций,&#10;# но работает программа только когда задаешь 1 и 2, почему так?&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;# Задача 5.Реализуйте алгоритм перемешивания списка.&#10;# (Без использования библиотеки random)" />
+    <option name="LAST_COMMIT_MESSAGE" value="# Задача 1. Для натурального n создать словарь индекс-значение,&#10;# состоящий из элементов последовательности 3n + 1.&#10;# Пример:&#10;# - Для n = 6: {1: 4, 2: 7, 3: 10, 4: 13, 5: 16, 6: 19}&#10;&#10;# dictionary = {}&#10;# i=1&#10;# n = int(input('введите натуральное число n: '))&#10;# if n &lt;=0:&#10;#     print('Ошибка, введите число &gt;=1')&#10;# else:&#10;#     for i in range(1, n + 1):&#10;#         key = i&#10;#         value = 3 * i + 1&#10;#         dictionary[key] = value&#10;#         i += 1&#10;#     print(f'получен словарь: {dictionary}')&#10;&#10;&#10;# Задача 2. Напишите программу, которая принимает на вход число N&#10;# и выдает набор произведений чисел от 1 до N.&#10;# Пример:&#10;# - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)&#10;#&#10;# n = int(input('введите число n'))&#10;# factorial = 1&#10;# for i in range(2, n + 1):&#10;#     factorial *= i&#10;#     print(factorial, end=' ')&#10;&#10;&#10;&#10;# Задача 3. Задайте список из n чисел последовательности (1+ (1/n))^n и выведите на экран их сумму.&#10;# Пример:&#10;# - Для n = 5: сумма = 11,55&#10;&#10;#&#10;# list = []&#10;# n = int(input('введите число n: '))&#10;# sum = 0&#10;# posledov = 0&#10;# if n &lt;= 0:&#10;#     print('Ошибка, введите число больше 0')&#10;# else:&#10;#     for i in range(1, n + 1):&#10;#         posledov = (1+ (1/i))**i&#10;#         posledov = round(posledov, 2)&#10;#         list.append(posledov)&#10;#         sum = sum + posledov&#10;#         i += 1&#10;#     print(list)&#10;#     print('сумма чисел последовательности (1+ (1/n))^n =', round(sum, 2))&#10;&#10;&#10;&#10;# Задача 4. Задайте список из N элементов, заполненных числами из промежутка [-N, N].&#10;# Найдите произведение элементов на указанных позициях.&#10;# Позиции хранятся в файле file.txt в одной строке одно число.&#10;&#10;# import random&#10;#&#10;#&#10;# n = int(input('введите число n'))&#10;# lst=[]&#10;# for i in range (-n, n+1):&#10;#     x = random.randint(-n,n)&#10;#     lst.append(x)&#10;# print (lst)&#10;#&#10;# posishn = open ('ввв')&#10;# pos1 = int(posishn.read(1))&#10;# pos2 = int(posishn.read(2))&#10;# posishn.close()&#10;# print(f'позиции из файла: {pos1}, {pos2}')&#10;#&#10;# proizveden = lst[pos1] * lst[pos2]&#10;#&#10;# print(proizveden)&#10;&#10;# Подскажите пожалуйста в данной задаче в файле.txt было создано 7 позиций,&#10;# но работает программа только когда задаешь 1 и 2, почему так?&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;# Задача 5.Реализуйте алгоритм перемешивания списка.&#10;# (Без использования библиотеки random)" />
+  </component>
+</project>
